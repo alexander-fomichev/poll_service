@@ -15,6 +15,7 @@ from .serializers import PollSerializer, WriteQuestionSerializer, PollDetailSeri
 class PollViewSet(viewsets.ModelViewSet):
     serializer_class = PollSerializer
     permission_classes = (IsAdminOrReadOnly, )
+    http_method_names = ['get', 'post', 'head', 'delete', 'patch']
 
     def get_queryset(self):
         if self.request.user.is_staff:
@@ -49,6 +50,7 @@ class QuestionViewSet(viewsets.ModelViewSet):
     serializer_class = WriteQuestionSerializer
     permission_classes = (IsAdminUser, )
     lookup_field = 'position'
+    http_method_names = ['get', 'post', 'head', 'delete', 'patch']
 
     def get_queryset(self):
         return Question.objects.filter(poll=self.kwargs['poll_pk']).order_by('position')

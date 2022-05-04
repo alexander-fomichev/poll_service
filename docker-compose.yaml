@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  poll1:
+    build: .
+    #image: poll
+    ports:
+      - "8000:8000"
+    volumes:
+      - db_poll:/usr/src/app/db
+    restart: always
+volumes:
+  db_poll:
