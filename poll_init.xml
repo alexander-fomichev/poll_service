@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="poll.myuser" pk="2">
+    <field name="password" type="CharField">pbkdf2_sha256$320000$7fwvwBMbayiQGX9d2S3ey4$KmqyCf7CeGtyo68yxdqheK/wozzeQ+GzSz3MYA9Nr7k=</field>
+    <field name="last_login" type="DateTimeField">2022-04-27T05:05:20.666620+00:00</field>
+    <field name="is_superuser" type="BooleanField">True</field>
+    <field name="username" type="CharField">admin</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">True</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2022-03-17T13:31:44.781473+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="poll.myuser" pk="3">
+    <field name="password" type="CharField">!3H4HfNZgVoAaoT7x4zc9wxo4GYdPzSOTnzBpimwS</field>
+    <field name="last_login" type="DateTimeField"><None></None></field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">3</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2022-03-18T10:39:27.398834+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="poll.myuser" pk="4">
+    <field name="password" type="CharField">!YZy9PnKgZlNCfeGjeASkbWkWjXc67y2TqLBnwB8p</field>
+    <field name="last_login" type="DateTimeField"><None></None></field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">4</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2022-03-18T10:54:22.130560+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="poll.myuser" pk="5">
+    <field name="password" type="CharField">!PXs0isNGjPwcKXX3CJc7yWviVta7OR2dom7OsPn9</field>
+    <field name="last_login" type="DateTimeField"><None></None></field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">5</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2022-03-18T11:18:03.611928+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="poll.myuser" pk="6">
+    <field name="password" type="CharField">!FBNPhbz1DXIY18HeK5XaXLKzMNruVe8hy0y39XNF</field>
+    <field name="last_login" type="DateTimeField"><None></None></field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">6</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField"></field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2022-03-18T11:19:20.482303+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="poll.poll" pk="1">
+    <field name="title" type="CharField">Тестовый опрос</field>
+    <field name="description" type="TextField">Опрос для тестирования</field>
+    <field name="started_at" type="DateField">2022-03-18</field>
+    <field name="finished_at" type="DateField"><None></None></field>
+  </object>
+  <object model="poll.poll" pk="3">
+    <field name="title" type="CharField">Опрос завершен</field>
+    <field name="description" type="TextField">Опрос для тестирования изменения</field>
+    <field name="started_at" type="DateField">2022-05-02</field>
+    <field name="finished_at" type="DateField">2020-10-11</field>
+  </object>
+  <object model="poll.question" pk="1">
+    <field name="position" type="IntegerField">1</field>
+    <field name="question_type" type="SmallIntegerField">1</field>
+    <field name="main_text" type="TextField">Сколько будет 2+2?</field>
+    <field name="poll" rel="ManyToOneRel" to="poll.poll">1</field>
+  </object>
+  <object model="poll.question" pk="15">
+    <field name="position" type="IntegerField">2</field>
+    <field name="question_type" type="SmallIntegerField">2</field>
+    <field name="main_text" type="TextField">Скольо будет 3*2?</field>
+    <field name="poll" rel="ManyToOneRel" to="poll.poll">1</field>
+  </object>
+  <object model="poll.question" pk="16">
+    <field name="position" type="IntegerField">3</field>
+    <field name="question_type" type="SmallIntegerField">3</field>
+    <field name="main_text" type="TextField">Выберите нечетные числа</field>
+    <field name="poll" rel="ManyToOneRel" to="poll.poll">1</field>
+  </object>
+  <object model="poll.choice" pk="62">
+    <field name="choice_text" type="CharField">5</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">15</field>
+  </object>
+  <object model="poll.choice" pk="63">
+    <field name="choice_text" type="CharField">6</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">15</field>
+  </object>
+  <object model="poll.choice" pk="64">
+    <field name="choice_text" type="CharField">7</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">15</field>
+  </object>
+  <object model="poll.choice" pk="65">
+    <field name="choice_text" type="CharField">8</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">15</field>
+  </object>
+  <object model="poll.choice" pk="70">
+    <field name="choice_text" type="CharField">4</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">16</field>
+  </object>
+  <object model="poll.choice" pk="71">
+    <field name="choice_text" type="CharField">5</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">16</field>
+  </object>
+  <object model="poll.choice" pk="72">
+    <field name="choice_text" type="CharField">10</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">16</field>
+  </object>
+  <object model="poll.choice" pk="73">
+    <field name="choice_text" type="CharField">15</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">16</field>
+  </object>
+  <object model="poll.attempt" pk="19">
+    <field name="user" rel="ManyToOneRel" to="poll.myuser">3</field>
+    <field name="poll" rel="ManyToOneRel" to="poll.poll">1</field>
+    <field name="time" type="DateTimeField">2022-05-04T06:42:31.990590+00:00</field>
+  </object>
+  <object model="poll.answer" pk="18">
+    <field name="attempt" rel="ManyToOneRel" to="poll.attempt">19</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">1</field>
+    <field name="answer" type="TextField">['4']</field>
+  </object>
+  <object model="poll.answer" pk="19">
+    <field name="attempt" rel="ManyToOneRel" to="poll.attempt">19</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">15</field>
+    <field name="answer" type="TextField">['6']</field>
+  </object>
+  <object model="poll.answer" pk="20">
+    <field name="attempt" rel="ManyToOneRel" to="poll.attempt">19</field>
+    <field name="question" rel="ManyToOneRel" to="poll.question">16</field>
+    <field name="answer" type="TextField">['5', '15']</field>
+  </object>
+</django-objects>
