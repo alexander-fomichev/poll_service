@@ -11,7 +11,7 @@ class PollSerializer(serializers.ModelSerializer):
     class Meta:
         model = Poll
         fields = '__all__'
-        #exclude = ['id', ]
+        # exclude = ['id', ]
 
 
 class ChoiceSerializer(serializers.ModelSerializer):
@@ -84,7 +84,7 @@ class WriteQuestionSerializer(serializers.ModelSerializer):
         """
         Проверяет уникальность номера вопроса (position) в опросе
         """
-        #method = self.context['request'].method
+        # method = self.context['request'].method
         poll_id = self.context.get('poll_pk')
         if value and Question.objects.filter(poll_id=poll_id, position=value).exists():
             raise serializers.ValidationError("Position already exists!")

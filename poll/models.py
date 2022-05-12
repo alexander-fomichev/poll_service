@@ -32,6 +32,7 @@ class Poll(models.Model):
     def __str__(self):
         return self.title
 
+
 class Question(models.Model):
     TEXT = 1
     SINGLE_CHOICE = 2

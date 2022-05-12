@@ -39,7 +39,7 @@ class PollViewSet(viewsets.ModelViewSet):
             return PollSerializer
 
     @action(methods=['post'], detail=True, permission_classes=[AllowAny])
-    def vote(self, request,  *args, **kwargs):
+    def vote(self, request, *args, **kwargs):
         serializer = VoteSerializer(data=request.data, context={'poll_pk': self.kwargs['pk']})
         serializer.is_valid(raise_exception=True)
         serializer.save()
